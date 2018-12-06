@@ -30,4 +30,7 @@ ISBN：9787302510826
 
 ### 第六章 文件系统的基本管理
 
-[习题答案](./chapter6/answers.md) 更新中
+[习题答案](./chapter6/answers.md) 
+
+### Chapter7 bash的基本使用与系统救援
+[习题答案](./chapter7/answers.md)  更新中
