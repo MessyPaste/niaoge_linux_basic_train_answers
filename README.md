@@ -32,5 +32,8 @@ ISBN：9787302510826
 
 [习题答案](./chapter6/answers.md) 
 
-### Chapter7 bash的基本使用与系统救援
-[习题答案](./chapter7/answers.md)  更新中
+### 第七章 bash的基本使用与系统救援
+[习题答案](./chapter7/answers.md)
+
+### 第八章 bash命令连续执行与数据流重定向
+[习题答案](./chapter8/answers.md)

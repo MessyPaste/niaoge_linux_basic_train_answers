@@ -15,11 +15,11 @@
 这里我对原书命令有疑问，应该是大写的shell，即SHELL，如下：
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/ADD84859-A9C2-4BA3-8952-0B4F9D56D91F.png)
 也就是说当前系统的shell就是bash
-3. 切换shell，一开始在官方镜像上切换，发现无法切换csh，我用chsh -l看了下
+3. 切换shell，一开始在官方镜像上切换，发现无法切换csh，我用chsh -l看了下(通过chsh -l可以查看当前系统已有的shell是哪些)，即没有显示csh这个shell
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/780618E9-97C2-4E29-A049-11BB7F5D668F.png)
 然后我用腾讯云试了下，发现有csh
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/779308A7-8C9D-4620-AF76-9520AC4193D8.png)
-下面使用腾讯云演示,这里使用chsh命令切换e
+下面使用腾讯云演示,这里使用chsh命令切换shell，输入chsh然后再次输入你要切换的shell所在的可执行程序就可以了
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/D6D6F784-E716-466E-94C9-5014F63D3DD4.png)
 4. BASH无数据，SHELL已经改成csh
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/9F6ABB29-046F-4065-B161-887F62BBE169.png)
@@ -37,7 +37,7 @@
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/75CCDE67-E683-4B2A-9FB5-714551CE7744.png)
 2. 尝试使用shell登录student，无法登陆
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/994BB816-37F7-412A-8807-9A9D93BF3BF6.png)
-3. 命令是：usermod -s /bin/bash student
+3. 命令是：usermod -s /bin/bash student，然后就可以继续登录了
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/F5538ED7-6C34-4AD0-97CB-C25D984A9EA8.png)
 
 # p109-下
@@ -55,7 +55,7 @@
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/C1198B85-E367-4F81-AD2B-018C096E8629.png)
 
 # p110
-1. 作者书中空格符也要加转义（书中p110，黑色正方形第五点），而经过我实测，空格符是不需要的，如下所示：
+1. 作者书中空格符也要加转义（即书中p110，黑色正方形第五点），而经过我实测，空格符是不需要的，如下所示：
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/BAD86A39-50AA-497E-97EE-886F2343AFA8.png)
 2. 
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/C2D73161-A8EB-40A3-B5A6-5F8ED0C6A2AB.png)
@@ -63,9 +63,9 @@
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/229AD905-E614-4BD1-ABF0-30AF156EC0E1.png)
 4. 注意$前面有转义字符
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/5BCC02E2-399D-47C0-9B0C-0E0A05AA47D7.png)
-5. 注意$前面没有转义字符
+5. 注意$前面没有转义字符，$myname会被替换成myname指向的变量
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/CB56E50E-645F-42E9-B805-8BFF5CB690C8.png)
-6. 
+6. 这个命令用于显示操作系统的发行版号
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/B6097791-CBA8-41B6-9580-143185834E3F.png)
 7. 
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/F08B688A-2683-4CA6-BB05-8E69C74A1C6E.png)
@@ -94,4 +94,81 @@
 ![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/3B15F149-E9EC-4556-AF63-DC90C2D68A7A.png)
 4. 4-6略 笔者此处环境可能与书上不同，略
 
-未完待续…
+## p113
+1. PS1的内容为：[\u@\h \W]\$
+![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/BC9F9C29-9E80-4C05-9F6D-63D3002CBE33.png)
+2. \W ：利用basename取得工作目录名称，只显示最后一个目录名
+\$ ：提示字符，如果是root用户，提示符为 # ，普通用户则为 $
+3. PS1="[\u@\h \# \W]\$"
+![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/9306C699-4114-4DD4-B2A7-717859032AEE.png)
+[Linux系统下的终端命令提示符设置（PS1）_Linux教程_Linux公社-Linux系统门户网站](https://www.linuxidc.com/Linux/2016-10/136597.htm)
+![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/75B898FD-99D3-40A0-BE3A-99304D250357.png)
+
+## p113-下
+### 背景知识：
+#### set、env和export命令的区别（做本章题目前，建议先了解）
+set命令显示当前shell的变量，包括当前用户的变量;
+env命令显示当前用户的变量;
+export命令显示当前导出成用户变量的shell变量。
+
+1. 如果直接输入set、env或export，那么会打印出所有相关的变量，可以通过在指令后加入 | grep “mypp”方式输出指定变量名的变量![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/E2414BBC-9D6D-4393-B687-BF02BBE6E79D.png)
+2. 见3
+3. 只有set中有
+![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/84F45F63-C2D2-4C93-B0F4-8867E0E2F0D3.png)
+![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/8860A91D-6E0B-41AC-A89F-A301AC923361.png)
+4. 
+![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/6ED1DE77-D9B3-47B8-A51B-67E6CB884032.png)
+5. 输出为空，均不存在,因为shell变了
+![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/E2414BBC-9D6D-4393-B687-BF02BBE6E79D%202.png)
+6. 略
+7. 输入exit即可
+8. 不存在，因为shell变了
+9. 存在，使用export即可将当前变量导出成用户变量，这样env或者export命令就可以看到了
+![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/DDADA675-D378-4A0D-832A-7D4258BCA16C.png)
+10. 11. 12.  可见通过export导出的变量，在同一个用户的另外一个shell也可以看到
+![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/E5F8B7DB-2FD1-460E-8E3E-BF0488AA1487.png)
+## p114
+![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/8A354736-4EE7-45B6-B205-2553A9B0789A.png)
+## p115
+1. 主要设置了PATH的本地路径，将本地目录下的bin加入可执行目录中
+![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/C2191A89-3EDA-4200-9F8E-4AE55B83BB90.png)
+2. 这里记录了个人配置文件，我这里没有做多少配置，一些软件的环境变量可以设置在这里，比如讲一些可执行文件目录加入到PATH中
+![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/B14C51E7-3B58-447B-AC2D-961F4998F8CA.png)
+## p115-下
+1. 依次输入以下内容：
+```
+HISTSIZE="10000"
+PATH=$PATH:/home/student/cmd
+kver=`uname -r`
+LANG="zh_CN.UTF-8"
+PS1="[\u@\h \t \# \W]\$"
+h_start=`wc -l ~/.bash_history | cut -d " " -f 1` 
+```
+即如下：
+![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/3A3DD340-52D7-444A-8FFB-3938D4387B1E.png)
+2. 输入source ~/.bashrc立刻生效
+```
+source ~/.bashrc
+```
+![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/F83FF5F0-A38C-42BA-B372-5C217710918B.png)
+
+## p116
+1. 加入以下内容到~/.bash_logout
+```
+date +%Y/%m/%d\ %H:%M >> history.log
+```
+输出结果如下
+![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/6A0830E2-D90D-43EC-ADDD-65FF6659DA35.png)
+关于输出最新的命令，我没用采用书上方法，因为总是无法输出预期结果，我换了一种方案：
+在.bash_logout加入以下代码：
+```
+history | tail -1 >> history.log
+```
+然后输出记录
+![](Chapter7%20bash%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E6%95%91%E6%8F%B4/6B9C03E2-0487-444C-9948-EE69BA19B22A.png)
+但是你会发现因为你最后一个命令是logout，所以一直会显示logout，我感觉并不是作者的初衷，所以应该是显示倒数第二条指令，所以我把刚才加入到.bash_logout内容换成:
+```
+history | tail -n 2 | head -n 1 >> history.log
+```
+以上代码有点拗口，但是我觉得是对于新手来说比较容易理解，即先输出histroy最后两行然后取第一行，这样就达到了取倒数第二行的效果，如果你有更好的方案，欢迎告诉我。
+2. 没有记录
